@@ -6,20 +6,22 @@ import Navbar from "../components/Navbar";
 const Header = () => {
     return (
         <div className="h-screen bg-cover" style={{ backgroundImage: "url('/images/bg-welcoming-page.jpg')" }}>
-        <div className="bg-black opacity-70 absolute inset-0"></div>
-        <Navbar 
+            <div className="bg-black opacity-70 absolute inset-0"></div>
+            <Navbar 
                 logo="/images/navbar-logo.svg" 
                 showLanguageOption={true} 
                 showSignInButton={true} 
             />
 
-        <div className="relative flex flex-col items-center justify-center h-screen text-white">
-            <p className="text-6xl font-extrabold w-1/2">
-                Unlimited movies, TV shows, and more
-            </p>
-            <p className="text-xl font-medium mt-7">Starts at IDR 54,000. Cancel anytime.</p>
+            <div className="relative flex flex-col items-center justify-center h-screen text-white">
+                <p className="text-4xl font-extrabold w-1/2"> 
+                    Unlimited movies, TV shows, and more
+                </p>
+                <p className="text-lg font-medium mt-4"> 
+                    Starts at IDR 54,000. Cancel anytime.
+                </p>
+            </div>
         </div>
-    </div>
     )
 }
 
@@ -41,4 +43,4 @@ const WelcomingPage = () => {
     )
 }
 
-export default WelcomingPage
+export default WelcomingPage;
